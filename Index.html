@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        tr>th {
+            background: #95e495;
+            padding: 5px;
+        }
+
+        tr>td {
+            background: #eeeded;
+            padding: 5px 10px;
+        }
+
+        img {
+            margin: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            /* background: #a7cadf; */
+        }
+
+        #employee-form {
+            width: 40%;
+            margin: 40px auto;
+            padding: 20px 30px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="number"] {
+            width: 100%;
+            height: 20px;
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+
+        select {
+            width: 100%;
+            height: 30px;
+            /* margin-bottom: 20px; */
+            padding: 15x;
+            border: 1px solid #ccc;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            height: 40px;
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #3e8e41;
+        }
+
+        #employee-list {
+            margin-top: 40px;
+        }
+
+        .employee-item {
+            padding: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .employee-item:last-child {
+            border-bottom: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="q1">
+        <h2>Q1 Table tags of HTML.</h2>
+        <table>
+            <tr>
+                <th>Roll No.</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Contact</th>
+            </tr>
+            <tr>
+                <td>218376</td>
+                <td>Sunil Rathod</td>
+                <td rowspan="2">M.Sc. Coputer Science</td>
+                <td>9890957016</td>
+            </tr>
+            <tr>
+                <td>218376</td>
+                <td>Sunil Rathod</td>
+                <td>9890957016</td>
+            </tr>
+            <tr>
+                <td colspan="4">More Info</td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <hr>
+    <div class="q2">
+        <h2>Q2 HTML Text Formatting Tags</h2>
+        <table>
+            <tr>
+                <th>Tag</th>
+                <th>Description</th>
+                <th>Example</th>
+            </tr>
+            <tr>
+                <td><code>&lt;b&gt;</code></td>
+                <td>Defines bold text</td>
+                <td><b>This text is bold</b></td>
+            </tr>
+            <tr>
+                <td><code>&lt;strong&gt;</code></td>
+                <td>Defines strong text (more important than bold)</td>
+                <td><strong>This text is strong</strong></td>
+            </tr>
+            <tr>
+                <td><code>&lt;i&gt;</code></td>
+                <td>Defines italic text</td>
+                <td><i>This text is italic</i></td>
+            </tr>
+            <tr>
+                <td><code>&lt;em&gt;</code></td>
+                <td>Defines emphasized text (more important than italic)</td>
+                <td><em>This text is emphasized</em></td>
+            </tr>
+            <tr>
+                <td><code>&lt;u&gt;</code></td>
+                <td>Defines underlined text</td>
+                <td><u>This text is underlined</u></td>
+            </tr>
+            <tr>
+                <td><code>&lt;ins&gt;</code></td>
+                <td>Defines inserted text</td>
+                <td><ins>This text is inserted</ins></td>
+            </tr>
+            <tr>
+                <td><code>&lt;s&gt;</code></td>
+                <td>Defines strikethrough text</td>
+                <td><s>This text is strikethrough</s></td>
+            </tr>
+            <tr>
+                <td><code>&lt;del&gt;</code></td>
+                <td>Defines deleted text</td>
+                <td><del>This text is deleted</del></td>
+            </tr>
+            <tr>
+                <td><code>&lt;mark&gt;</code></td>
+                <td>Defines marked text</td>
+                <td><mark>This text is marked</mark></td>
+            </tr>
+            <tr>
+                <td><code>&lt;small&gt;</code></td>
+                <td>Defines small text</td>
+                <td><small>This text is small</small></td>
+            </tr>
+            <tr>
+                <td><code>&lt;sub&gt;</code></td>
+                <td>Defines subscript text</td>
+                <td>H<sub>2</sub>O</td>
+            </tr>
+            <tr>
+                <td><code>&lt;sup&gt;</code></td>
+                <td>Defines superscript text</td>
+                <td>2<sup>3</sup></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <hr>
+    <div class="q3">
+        <h2>Q3 List tags of HTML</h2>
+        <h3>Ordered List</h3>
+        <ol>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ol>
+
+        <h3>Unordered List</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+
+        <h3>Nested List</h3>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ul>
+                    <li>Subitem 1</li>
+                    <li>Subitem 2</li>
+                </ul>
+            </li>
+            <li>Item 3</li>
+        </ul>
+
+        <h3>Definition List</h3>
+        <dl>
+            <dt>Term 1</dt>
+            <dd>Definition 1</dd>
+            <dt>Term 2</dt>
+            <dd>Definition 2</dd>
+        </dl>
+    </div>
+    <br>
+    <hr>
+    <div class="q4">
+        <h2>Q4 Include image using HTML tag</h2>
+        <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="img" width="500px">
+    </div>
+    <br>
+    <hr>
+    <div class="q5">
+        <h2>Q5 Employee Registration</h2>
+        <form id="employee-form">
+            <label for="id">Employee ID:</label>
+            <input type="number" id="id" name="id"><br><br>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="department">Department:</label>
+            <select id="department" name="department">
+                <option value="">Select Department</option>
+                <option value="HR">HR</option>
+                <option value="Marketing">Marketing</option>
+                <option value="IT">IT</option>
+            </select><br><br>
+            <label for="role">Role:</label>
+            <select id="role" name="role">
+                <option value="">Select Role</option>
+                <option value="Manager">Manager</option>
+                <option value="Employee">Employee</option>
+            </select><br><br>
+            <button id="submit-btn">Submit</button>
+        </form>
+    </div>
+    <br>
+    <hr>
+    <div class="q6">
+        <h2>Q6 Heading, Paragraphs and lists</h2>
+        <div>
+            <h2>This is the first page</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus tempora praesentium amet reiciendis at
+                perspiciatis cupiditate totam delectus quidem hic?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum eos doloremque neque nihil tempora
+                provident alias magni labore mollitia! Ipsam, suscipit harum magnam impedit fugiat molestiae itaque
+                similique eaque iste dolores accusantium.</p>
+        </div>
+        <div>
+            <ul>
+                <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et, amet?</li>
+                <ul type="square">
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                </ul>
+                <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis, consequuntur.</li>
+            </ul>
+            <div class="q6img">
+                <h2>Image</h2>
+                <img src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    alt="img" width="400px">
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <div class="q7">
+        <h2>Q7 Link</h2>
+        <h1>Welcome to My First Page</h1>
+        <p>This is my first page.</p>
+        <p>Click the link below to go to another page.</p>
+        <a href="q8.html">Go to the other page</a>
+    </div>
+    <br><hr>
+</body>
+
+</html>
