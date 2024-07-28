@@ -1,0 +1,125 @@
+<!-- gallery.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Gallery</title>
+    <style>
+        /* styles.css */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+        }
+
+        header img {
+            width: 100px;
+            height: 100px;
+            margin: 0px 10px;
+        }
+
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0px 10px;
+        }
+
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .photo {
+            margin: 20px;
+            width: 200px;
+        }
+
+        .photo img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .photo p {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="https://www.fergusson.edu/images/big-logo-1.png" alt="College Logo">
+        <h1>Fergusson College</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="q11.html">Home</a></li>
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="admission.html">Admission</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <h1>College Gallery</h1>
+    <div class="gallery">
+        <!-- Photo 1 -->
+        <div class="photo">
+            <img src="https://i.pinimg.com/564x/7b/9d/f8/7b9df848a6993cbd58aca575fe27a9c5.jpg" alt="Photo 1">
+            <p>Students in the library</p>
+        </div>
+        <!-- Photo 2 -->
+        <div class="photo">
+            <img src="https://i.pinimg.com/originals/45/90/f2/4590f213abee6e824be0cb1a8f761838.jpg" alt="Photo 2">
+            <p>College campus</p>
+        </div>
+        <!-- Photo 3 -->
+        <div class="photo">
+            <img src="https://i.pinimg.com/originals/a0/b5/1a/a0b51a2a5c614896f8b628a197d214e5.jpg" alt="Photo 3">
+            <p>Students in the cafeteria</p>
+        </div>
+        <!-- Add more photos here -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
