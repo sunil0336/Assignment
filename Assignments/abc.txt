@@ -1,3 +1,0 @@
-MCS_Assignments
-clone ,, push ,
-git push -origin
